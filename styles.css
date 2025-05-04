@@ -1,0 +1,72 @@
+.sidebar {
+  transition: all 0.3s ease;
+}
+.product-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+.status-in-stock {
+  background-color: #10b981;
+}
+.status-low {
+  background-color: #f59e0b;
+}
+.status-out {
+  background-color: #ef4444;
+}
+.notification {
+  animation: slideIn 0.5s forwards, fadeOut 0.5s 3s forwards;
+}
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.chart-container {
+  position: relative;
+  height: 300px;
+}
+.chart-legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.legend-color {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  border-radius: 3px;
+}
+.legend-text {
+  font-size: 14px;
+}
+
+/* Image Preview Styles */
+#preview-image {
+  max-width: 100%;
+  max-height: 100px;
+  object-fit: contain;
+}
+
+#image-preview.hidden {
+  display: none;
+}
