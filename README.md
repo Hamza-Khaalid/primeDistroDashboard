@@ -64,10 +64,4 @@ If you have any feedback or ideas for improvements, feel free to reach out:
 
 ---
 
-## 📄 License
-
-This project is open-source and available under the [MIT License](LICENSE).
-
----
-
 > _Built with curiosity, learning, and a whole lot of Tailwind classes!_
